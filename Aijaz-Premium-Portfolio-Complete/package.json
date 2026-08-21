@@ -10,6 +10,7 @@
     "dev": "node scripts/dev-with-project-sync.mjs",
     "dev:windows": "node scripts/dev-with-project-sync.mjs",
     "build": "node scripts/sync-projects.mjs --once && vinext build",
+    "build:vercel": "next build",
     "build:windows": "node scripts/sync-projects.mjs --once && vinext build",
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
