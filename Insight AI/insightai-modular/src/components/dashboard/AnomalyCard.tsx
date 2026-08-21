@@ -1,0 +1,1 @@
+import {AlertTriangle} from 'lucide-react';import {Card} from '../ui/Card';export function AnomalyCard(){return <Card className="anomaly-card"><AlertTriangle/><div><span>ANOMALY DETECTED</span><h3>Apr 18 revenue spiked 42% above expected range.</h3><p>Actual $9,740 · Expected $5,200–$6,900</p></div></Card>}

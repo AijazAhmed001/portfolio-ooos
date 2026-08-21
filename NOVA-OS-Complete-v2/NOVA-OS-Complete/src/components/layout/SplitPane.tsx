@@ -1,0 +1,1 @@
+import type {ReactNode} from 'react';export default function SplitPane({left,right}:{left:ReactNode;right:ReactNode}){return <div className='two-col'><section>{left}</section><section>{right}</section></div>}

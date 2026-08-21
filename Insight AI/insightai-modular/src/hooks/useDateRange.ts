@@ -1,0 +1,1 @@
+import {useFilterStore} from '../store/filterStore'; export const useDateRange=()=>{const dateRange=useFilterStore(s=>s.dateRange);const setDateRange=useFilterStore(s=>s.setDateRange);return{dateRange,setDateRange}};

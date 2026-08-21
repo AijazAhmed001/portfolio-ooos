@@ -1,0 +1,1 @@
+import { useMemo } from 'react';import { CheckoutSuccess } from '../../components/checkout/CheckoutSuccess';import { generateOrderId } from '../../lib/checkout';export default function OrderSuccessPage(){const id=useMemo(()=>sessionStorage.getItem('vanta_last_order')||generateOrderId(),[]);return <CheckoutSuccess orderId={id}/>}

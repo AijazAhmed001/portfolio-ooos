@@ -1,0 +1,1 @@
+import {useFilterStore} from '../store/filterStore'; export const useComparison=()=>({comparison:useFilterStore(s=>s.comparison),toggleComparison:useFilterStore(s=>s.toggleComparison)});

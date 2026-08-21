@@ -1,0 +1,1 @@
+export type ChartKind='line'|'area'|'bar'|'donut'; export interface ChartDefinition {type:ChartKind;metric:string;xAxis:string;groupBy:string;aggregation:'SUM'|'AVG'}

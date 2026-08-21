@@ -1,0 +1,1 @@
+import {reports} from '../../data/reports.mock';import {ReportCard} from './ReportCard';import {useUIStore} from '../../store/uiStore';export function ReportList(){const notify=useUIStore(s=>s.notify);return <div className="report-list">{reports.map(r=><ReportCard key={r.id} report={r} onDownload={()=>notify(`${r.name} prepared`)}/>)}</div>}

@@ -1,0 +1,1 @@
+import type {ParsedDataset} from '../types/dataset.types'; export const analyzeDataset=(d:ParsedDataset)=>{let missing=0;for(const row of d.rows)for(const c of d.columns)if(row[c]===''||row[c]==null)missing++;const total=Math.max(1,d.rows.length*d.columns.length);return{quality:Math.max(60,Math.round(100-(missing/total)*100)),missing,rows:d.rows.length,columns:d.columns.length}};

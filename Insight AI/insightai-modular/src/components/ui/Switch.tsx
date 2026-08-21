@@ -1,0 +1,1 @@
+export function Switch({checked,onChange}:{checked:boolean;onChange:(v:boolean)=>void}){return <button className={`switch ${checked?'on':''}`} onClick={()=>onChange(!checked)} aria-pressed={checked}><i/></button>}

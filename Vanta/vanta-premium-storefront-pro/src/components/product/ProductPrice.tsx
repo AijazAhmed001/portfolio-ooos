@@ -1,0 +1,1 @@
+import { useMoney } from '../../hooks/useMoney';export function ProductPrice({price,compareAt}:{price:number;compareAt?:number}){const money=useMoney();return <div className="product-price"><strong>{money(price)}</strong>{compareAt&&<del>{money(compareAt)}</del>}</div>}

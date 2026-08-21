@@ -1,0 +1,1 @@
+import {Card} from '../ui/Card';import {ChartHeader} from './ChartHeader';import {RevenueAreaChart} from './RevenueAreaChart';export function RevenueChart(){return <Card className="widget wide"><ChartHeader title="Revenue performance" value="$184.2K"/><div className="chart-box"><RevenueAreaChart/></div></Card>}

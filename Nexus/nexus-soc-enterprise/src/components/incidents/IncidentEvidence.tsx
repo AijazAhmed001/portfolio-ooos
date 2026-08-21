@@ -1,0 +1,2 @@
+import { ArrowRight,FileText } from 'lucide-react'
+export function IncidentEvidence(){return <div className="evidence-list">{['packet_capture_0842.pcap','waf_request.json','ip_reputation.json','request_headers.txt'].map((x,i)=><div key={x}><FileText size={17}/><span><b>{x}</b><small>{[2.4,0.18,0.06,0.04][i]} MB · captured automatically</small></span><button className="ghost-icon"><ArrowRight size={15}/></button></div>)}</div>}

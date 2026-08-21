@@ -1,0 +1,5 @@
+id: 02-recon
+mode: synthetic-defensive
+isolation_required: true
+external_targets_allowed: false
+reset_after_run: true

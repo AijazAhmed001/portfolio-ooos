@@ -1,0 +1,1 @@
+export const routes={home:'/',dashboard:'/dashboard',analytics:'/analytics',insights:'/insights',datasets:'/datasets',reports:'/reports',studio:'/chart-studio',settings:'/settings'} as const;

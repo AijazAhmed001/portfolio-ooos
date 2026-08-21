@@ -1,0 +1,1 @@
+import type {HTMLAttributes,ReactNode} from 'react'; import {cn} from '../../utils/cn'; export function Card({children,className,...p}:HTMLAttributes<HTMLDivElement>&{children:ReactNode}){return <div className={cn('card',className)} {...p}>{children}</div>}

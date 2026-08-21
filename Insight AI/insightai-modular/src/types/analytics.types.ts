@@ -1,0 +1,1 @@
+export type MetricKey='revenue'|'users'|'conversion'|'aov'; export interface Metric {key:MetricKey;label:string;value:number;prefix?:string;suffix?:string;change:number;spark:number[]} export interface ChartPoint {date:string;value:number;previous:number} export interface RegionDatum {name:string;value:number}

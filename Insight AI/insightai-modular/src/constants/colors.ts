@@ -1,0 +1,1 @@
+export const chartColors=['#8b7cff','#38bdf8','#34d399','#f59e0b','#f472b6','#64748b'];

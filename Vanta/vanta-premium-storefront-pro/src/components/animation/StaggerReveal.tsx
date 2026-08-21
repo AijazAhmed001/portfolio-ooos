@@ -1,0 +1,1 @@
+import { motion } from 'motion/react';import type { ReactNode } from 'react';export function StaggerReveal({children,className=''}:{children:ReactNode;className?:string}){return <motion.div className={className} initial="hidden" whileInView="show" viewport={{once:true,amount:.1}} variants={{show:{transition:{staggerChildren:.07}},hidden:{}}}>{children}</motion.div>}

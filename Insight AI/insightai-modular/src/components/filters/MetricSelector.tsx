@@ -1,0 +1,1 @@
+export function MetricSelector(){return <select className="select"><option>Revenue</option><option>Users</option><option>Conversion</option><option>Average order</option></select>}

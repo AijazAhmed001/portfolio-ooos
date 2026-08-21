@@ -1,0 +1,1 @@
+import type {SelectHTMLAttributes,ReactNode} from 'react';export default function Select({children,...props}:SelectHTMLAttributes<HTMLSelectElement>&{children:ReactNode}){return <select className='nova-input' {...props}>{children}</select>}

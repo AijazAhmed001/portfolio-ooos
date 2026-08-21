@@ -1,0 +1,1 @@
+export function TrendingSearches({onPick}:{onPick:(q:string)=>void}){return <div className="search-block"><span className="eyebrow">TRENDING</span>{['Motion Runner','Oversized tee','Technical jacket','Studio bag'].map(x=><button key={x} onClick={()=>onPick(x)}>{x}</button>)}</div>}

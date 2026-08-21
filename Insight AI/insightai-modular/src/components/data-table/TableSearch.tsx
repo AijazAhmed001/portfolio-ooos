@@ -1,0 +1,1 @@
+import {SearchInput} from '../ui/SearchInput';export function TableSearch({value,onChange}:{value:string;onChange:(v:string)=>void}){return <SearchInput value={value} onChange={e=>onChange(e.target.value)} placeholder="Search customers"/>}

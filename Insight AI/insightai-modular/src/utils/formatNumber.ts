@@ -1,0 +1,1 @@
+export const formatNumber=(v:number)=>new Intl.NumberFormat('en-US',{notation:v>9999?'compact':'standard',maximumFractionDigits:1}).format(v);

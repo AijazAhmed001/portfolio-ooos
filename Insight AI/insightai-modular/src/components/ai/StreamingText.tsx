@@ -1,0 +1,1 @@
+export function StreamingText({text,streaming}:{text:string;streaming?:boolean}){return <p className="streaming-text">{text}{streaming&&<i/>}</p>}

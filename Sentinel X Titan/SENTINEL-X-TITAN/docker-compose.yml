@@ -1,0 +1,25 @@
+services:
+  web:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
+      - ./apps/web:/app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+  gateway:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    working_dir: /src
+    volumes:
+      - ./services/gateway:/src
+    command: dotnet run
+    ports:
+      - "5080:5080"
+  analytics:
+    image: python:3.12-slim
+    working_dir: /app
+    volumes:
+      - ./analytics/api:/app
+    command: sh -c "pip install --no-cache-dir -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8090"
+    ports:
+      - "8090:8090"

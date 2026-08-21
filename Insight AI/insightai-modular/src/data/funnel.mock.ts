@@ -1,0 +1,1 @@
+export const funnel=[{label:'Visitors',value:'84,290',pct:100},{label:'Signups',value:'18,450',pct:72},{label:'Trials',value:'9,280',pct:48},{label:'Customers',value:'6,574',pct:34}];

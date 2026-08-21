@@ -1,0 +1,1 @@
+import { Grid2X2,Grid3X3 } from 'lucide-react';export function GridSwitcher({dense,onChange}:{dense:boolean;onChange:(v:boolean)=>void}){return <div className="grid-switcher"><button className={!dense?'active':''} onClick={()=>onChange(false)}><Grid2X2/></button><button className={dense?'active':''} onClick={()=>onChange(true)}><Grid3X3/></button></div>}

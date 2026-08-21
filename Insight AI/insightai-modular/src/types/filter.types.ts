@@ -1,0 +1,1 @@
+export interface Filters {dateRange:string;comparison:boolean;region:string;plan:string;channel:string}

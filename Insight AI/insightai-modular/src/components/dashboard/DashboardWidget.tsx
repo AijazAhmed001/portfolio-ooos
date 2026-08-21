@@ -1,0 +1,1 @@
+import type {ReactNode} from 'react';export function DashboardWidget({children}:{children:ReactNode}){return <>{children}</>}

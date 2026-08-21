@@ -1,0 +1,1 @@
+import type { Product } from '../../types/product';import { WishlistItem } from './WishlistItem';export function WishlistGrid({items}:{items:Product[]}){return <div className="product-grid">{items.map(p=><WishlistItem product={p} key={p.id}/>)}</div>}

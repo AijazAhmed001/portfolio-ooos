@@ -1,0 +1,1 @@
+import {useDatasetStore} from '../../store/datasetStore';export function DatasetSelector(){const {datasets,active,setActive}=useDatasetStore();return <select className="select" value={active.id} onChange={e=>{const d=datasets.find(x=>x.id===e.target.value);if(d)setActive(d)}}>{datasets.map(d=><option value={d.id} key={d.id}>{d.name}</option>)}</select>}

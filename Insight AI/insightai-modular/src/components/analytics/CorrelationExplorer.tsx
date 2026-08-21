@@ -1,0 +1,1 @@
+import {Card} from '../ui/Card';import {CorrelationChart} from '../charts/CorrelationChart';export function CorrelationExplorer(){return <Card><h3>Correlation explorer</h3><p>Discover relationships between business metrics.</p><CorrelationChart/></Card>}

@@ -1,0 +1,1 @@
+import {useEffect,useState} from 'react'; export const useStreamingText=(text:string,speed=25)=>{const [out,setOut]=useState('');useEffect(()=>{setOut('');const words=text.split(' ');let i=0;const t=window.setInterval(()=>{i++;setOut(words.slice(0,i).join(' '));if(i>=words.length)window.clearInterval(t)},speed);return()=>window.clearInterval(t)},[text,speed]);return out};

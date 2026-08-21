@@ -1,0 +1,1 @@
+import Dialog from '../ui/Dialog';export default function ConfirmDialog({open,text,onConfirm}:{open:boolean;text:string;onConfirm:()=>void}){return <Dialog open={open}><p>{text}</p><button className='danger-button' onClick={onConfirm}>Confirm</button></Dialog>}

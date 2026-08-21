@@ -1,0 +1,1 @@
+import { motion } from 'motion/react';import { useLocation } from 'react-router-dom';export function PageTransition({children}:{children:React.ReactNode}){const loc=useLocation();return <motion.main key={loc.pathname+loc.search} initial={{opacity:0,y:8}} animate={{opacity:1,y:0}} transition={{duration:.45,ease:[.22,1,.36,1]}}>{children}</motion.main>}

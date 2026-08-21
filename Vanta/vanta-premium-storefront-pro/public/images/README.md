@@ -1,0 +1,1 @@
+VANTA uses remote Unsplash editorial imagery by default to keep the starter project lightweight. Replace product/campaign URLs in src/data with your own optimized WebP/AVIF assets in these folders when moving to production.

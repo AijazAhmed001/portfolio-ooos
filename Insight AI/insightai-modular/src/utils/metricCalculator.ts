@@ -1,0 +1,1 @@
+export const sumColumn=(rows:Record<string,unknown>[],key:string)=>rows.reduce((a,r)=>a+(Number(r[key])||0),0);

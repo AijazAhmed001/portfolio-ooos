@@ -1,0 +1,1 @@
+import {Select} from '../ui/Select';export function AggregationSelector(){return <label>Aggregation<Select><option>SUM</option><option>AVG</option><option>COUNT</option></Select></label>}

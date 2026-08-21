@@ -1,0 +1,1 @@
+import {reports} from '../data/reports.mock'; export const reportService={list:()=>reports};

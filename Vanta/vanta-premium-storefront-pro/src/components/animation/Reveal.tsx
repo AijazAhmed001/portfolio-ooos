@@ -1,0 +1,2 @@
+import { motion } from 'motion/react';import type { ReactNode } from 'react';import { reveal } from '../../lib/animations'
+export function Reveal({children,className='',delay=0}:{children:ReactNode;className?:string;delay?:number}){return <motion.div className={className} variants={{hidden:reveal.hidden,show:{...reveal.show,transition:{...reveal.show.transition,delay}}}} initial="hidden" whileInView="show" viewport={{once:true,amount:.15}}>{children}</motion.div>}

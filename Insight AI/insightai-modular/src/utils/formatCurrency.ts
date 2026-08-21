@@ -1,0 +1,1 @@
+export const formatCurrency=(v:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:v<100?2:0}).format(v);

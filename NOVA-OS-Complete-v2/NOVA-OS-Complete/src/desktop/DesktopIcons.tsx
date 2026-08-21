@@ -1,0 +1,1 @@
+import DesktopIcon from './DesktopIcon';import {novaApps} from '../lib/apps';import {useNovaStore} from '../store/useNovaStore';export default function DesktopIcons(){const openApp=useNovaStore(s=>s.openApp);return <section className='desktop-icons'>{novaApps.slice(0,10).map(a=><DesktopIcon key={a.id} title={a.title} icon={a.icon} onOpen={()=>openApp(a.id,a.title)}/>)}</section>}

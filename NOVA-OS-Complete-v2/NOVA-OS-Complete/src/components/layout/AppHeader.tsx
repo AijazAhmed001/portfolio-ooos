@@ -1,0 +1,1 @@
+import type {ReactNode} from 'react';export default function AppHeader({title,actions}:{title:string;actions?:ReactNode}){return <header className='page-head compact'><h1>{title}</h1>{actions}</header>}

@@ -1,0 +1,1 @@
+import {create} from 'zustand'; interface S{hidden:string[];toggleHidden:(id:string)=>void} export const useCustomizationStore=create<S>((set)=>({hidden:[],toggleHidden:(id)=>set(s=>({hidden:s.hidden.includes(id)?s.hidden.filter(x=>x!==id):[...s.hidden,id]}))}));

@@ -1,0 +1,1 @@
+export function DatasetIssues({missing=42}:{missing?:number}){return <div className="dataset-issues"><span>⚠ {missing} missing values</span><span>⚠ 3 duplicate records</span></div>}

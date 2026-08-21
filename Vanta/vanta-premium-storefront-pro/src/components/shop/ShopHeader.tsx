@@ -1,0 +1,1 @@
+export function ShopHeader({title='SHOP',copy='Contemporary essentials designed for everyday movement.'}:{title?:string;copy?:string}){return <section className="shop-hero"><span className="eyebrow">VANTA / COLLECTION</span><h1>{title}</h1><p>{copy}</p></section>}

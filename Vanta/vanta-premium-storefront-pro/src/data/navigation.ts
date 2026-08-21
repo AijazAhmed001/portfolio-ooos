@@ -1,0 +1,1 @@
+export const navigation=[{label:'New',to:'/shop?sort=newest'},{label:'Men',to:'/shop/men'},{label:'Women',to:'/shop/women'},{label:'Footwear',to:'/shop/footwear'},{label:'Collections',to:'/collections/motion-26'}]

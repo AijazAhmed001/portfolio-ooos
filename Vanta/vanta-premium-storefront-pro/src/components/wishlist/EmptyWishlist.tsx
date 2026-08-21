@@ -1,0 +1,1 @@
+import { Link } from 'react-router-dom';export function EmptyWishlist(){return <div className="empty-state page-empty"><span>NOTHING SAVED YET</span><p>Keep track of the pieces you love.</p><Link className="btn btn-dark" to="/shop">START EXPLORING →</Link></div>}

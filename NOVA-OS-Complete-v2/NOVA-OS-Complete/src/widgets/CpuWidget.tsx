@@ -1,0 +1,1 @@
+import {usePerformance} from '../lib/usePerformance';export default function CpuWidget(){const{latest}=usePerformance();return <div className='status-chip'><span/>CPU {Number(latest?.cpu||0).toFixed(0)}%</div>}

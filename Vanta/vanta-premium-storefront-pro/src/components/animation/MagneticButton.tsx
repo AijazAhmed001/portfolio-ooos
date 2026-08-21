@@ -1,0 +1,1 @@
+import { motion } from 'motion/react';export function MagneticButton({children,className='',onClick}:{children:React.ReactNode;className?:string;onClick?:()=>void}){return <motion.button whileHover={{scale:1.025}} whileTap={{scale:.98}} transition={{type:'spring',stiffness:380,damping:24}} className={className} onClick={onClick}>{children}</motion.button>}

@@ -1,0 +1,2 @@
+import { usePreferencesStore } from '../../store/preferencesStore'
+export function PreferencesMenu(){const currency=usePreferencesStore(s=>s.currency),setCurrency=usePreferencesStore(s=>s.setCurrency);return <label className="preferences"><span>CURRENCY</span><select value={currency} onChange={e=>setCurrency(e.target.value as typeof currency)}><option>USD</option><option>EUR</option><option>GBP</option><option>AED</option><option>PKR</option></select></label>}

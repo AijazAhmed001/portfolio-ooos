@@ -1,0 +1,1 @@
+export const checkoutSteps=['information','shipping','payment','review'];export function CheckoutProgress({step}:{step:string}){const active=Math.max(0,checkoutSteps.indexOf(step));return <div className="steps">{checkoutSteps.map((x,i)=><span key={x} className={i<=active?'active':''}>0{i+1} / {x.toUpperCase()}</span>)}</div>}

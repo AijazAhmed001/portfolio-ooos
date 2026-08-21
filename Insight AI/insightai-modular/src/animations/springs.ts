@@ -1,0 +1,1 @@
+export const panelSpring={type:'spring' as const,stiffness:350,damping:34};

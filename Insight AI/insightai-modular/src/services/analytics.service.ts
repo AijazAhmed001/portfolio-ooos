@@ -1,0 +1,1 @@
+import {metrics} from '../data/dashboard.mock'; import {revenueData} from '../data/revenue.mock'; export const analyticsService={getMetrics:()=>metrics,getRevenue:()=>revenueData};

@@ -1,0 +1,1 @@
+export function ChartEmptyState(){return <div className="empty-chart">No chart data</div>}

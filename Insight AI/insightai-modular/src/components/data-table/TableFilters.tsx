@@ -1,0 +1,1 @@
+import {Filter} from 'lucide-react';import {Button} from '../ui/Button';export function TableFilters(){return <Button variant="secondary"><Filter size={14}/>Filter</Button>}

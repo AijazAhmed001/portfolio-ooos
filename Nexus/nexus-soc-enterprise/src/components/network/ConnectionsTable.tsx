@@ -1,0 +1,3 @@
+import { Card,SectionTitle } from '../common'
+import { networkConnections } from '../../data/network'
+export function ConnectionsTable(){return <Card className="span-12"><SectionTitle eyebrow="SESSIONS" title="Active Connections"/><div className="vuln-table"><div className="vuln-row head"><span>Source</span><span>Destination</span><span>Protocol</span><span>Data</span><span>Status</span><span>Action</span></div>{networkConnections.map(c=><div className="vuln-row" key={`${c.source}-${c.destination}`}><b className="mono">{c.source}</b><span className="mono">{c.destination}</span><span>{c.protocol}</span><strong>{c.data}</strong><span>{c.status}</span><button className="ghost-btn small">Inspect</button></div>)}</div></Card>}

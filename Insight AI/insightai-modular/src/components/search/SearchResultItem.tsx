@@ -1,0 +1,1 @@
+import {ArrowUpRight} from 'lucide-react';export function SearchResultItem({label,meta}:{label:string;meta:string}){return <button className="search-result"><div><b>{label}</b><span>{meta}</span></div><ArrowUpRight size={14}/></button>}

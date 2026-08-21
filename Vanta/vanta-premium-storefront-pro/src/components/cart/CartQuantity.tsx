@@ -1,0 +1,1 @@
+import { Minus,Plus } from 'lucide-react';export function CartQuantity({qty,onChange}:{qty:number;onChange:(n:number)=>void}){return <div className="qty"><button onClick={()=>onChange(qty-1)}><Minus/></button><span>{qty}</span><button onClick={()=>onChange(qty+1)}><Plus/></button></div>}

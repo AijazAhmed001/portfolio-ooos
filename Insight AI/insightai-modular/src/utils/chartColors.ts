@@ -1,0 +1,1 @@
+export {chartColors} from '../constants/colors';

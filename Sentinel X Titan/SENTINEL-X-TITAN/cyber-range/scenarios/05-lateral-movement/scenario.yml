@@ -1,0 +1,5 @@
+id: 05-lateral-movement
+mode: synthetic-defensive
+isolation_required: true
+external_targets_allowed: false
+reset_after_run: true

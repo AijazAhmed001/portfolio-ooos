@@ -1,0 +1,1 @@
+import {ChartNoAxesCombined} from 'lucide-react';import {Button} from '../ui/Button';import {useFilterStore} from '../../store/filterStore';export function ComparisonPicker(){const on=useFilterStore(s=>s.comparison),toggle=useFilterStore(s=>s.toggleComparison);return <Button variant={on?'primary':'secondary'} onClick={toggle}><ChartNoAxesCombined size={15}/> Compare</Button>}

@@ -1,0 +1,1 @@
+export function CorrelationChart(){return <div className="correlation-placeholder">Marketing spend ↔ Revenue <b>0.74 correlation</b></div>}

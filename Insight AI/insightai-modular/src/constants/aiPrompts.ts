@@ -1,0 +1,1 @@
+export const aiPrompts=['Why did revenue increase?','Which segment performs best?','Explain conversion performance','Summarize this dashboard','Find unusual activity'];

@@ -1,0 +1,1 @@
+import {Search} from 'lucide-react';export function GlobalSearch({value,onChange}:{value:string;onChange:(v:string)=>void}){return <div className="command-input"><Search size={17}/><input autoFocus value={value} onChange={e=>onChange(e.target.value)} placeholder="Search InsightAI…"/></div>}

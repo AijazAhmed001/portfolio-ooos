@@ -1,0 +1,1 @@
+export const themeConfig={defaultTheme:'dark',accent:'#8b7cff',cyan:'#38bdf8'} as const;

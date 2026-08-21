@@ -1,0 +1,1 @@
+export function AISourceChips(){return <div className="chips"><span>Revenue</span><span>Enterprise</span><span>Apr 1–30</span></div>}

@@ -1,0 +1,1 @@
+import {ArrowUpRight,ArrowDownRight} from 'lucide-react';export function MetricChange({value}:{value:number}){const up=value>=0;return <span className={up?'metric-change up':'metric-change down'}>{up?<ArrowUpRight size={13}/>:<ArrowDownRight size={13}/>} {Math.abs(value)}%</span>}

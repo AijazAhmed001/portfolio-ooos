@@ -1,0 +1,1 @@
+import {defaultWidgets} from '../../constants/dashboardWidgets';import {WidgetCard} from './WidgetCard';export function WidgetPicker(){return <div className="widget-picker">{defaultWidgets.map(w=><WidgetCard key={w.id} title={w.title} onAdd={()=>{}}/>)}</div>}

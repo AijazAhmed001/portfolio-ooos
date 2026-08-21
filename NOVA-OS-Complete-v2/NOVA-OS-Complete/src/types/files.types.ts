@@ -1,0 +1,1 @@
+export type NovaFile={name:string;path:string;isDirectory:boolean;size:number;modified:number;extension:string};

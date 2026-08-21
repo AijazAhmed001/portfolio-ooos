@@ -1,0 +1,1 @@
+import Papa from 'papaparse'; import type {ParsedDataset} from '../types/dataset.types'; export const parseCSV=(file:File)=>new Promise<ParsedDataset>((resolve,reject)=>Papa.parse<Record<string,unknown>>(file,{header:true,skipEmptyLines:true,complete:r=>resolve({name:file.name,rows:r.data,columns:r.meta.fields||[]}),error:reject}));

@@ -1,0 +1,1 @@
+import { Link } from 'react-router-dom';export default function NotFoundPage(){return <section className="notfound"><span>404</span><h1>OFF ROUTE.</h1><p>This page moved before you did.</p><Link className="btn btn-dark" to="/shop">EXPLORE THE STORE →</Link></section>}

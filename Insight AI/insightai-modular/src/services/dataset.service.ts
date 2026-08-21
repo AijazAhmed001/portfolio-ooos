@@ -1,0 +1,1 @@
+import {parseCSV} from '../utils/csvParser'; import {analyzeDataset} from '../utils/datasetAnalyzer'; export const datasetService={async process(file:File){const parsed=await parseCSV(file);return{parsed,analysis:analyzeDataset(parsed)}}};

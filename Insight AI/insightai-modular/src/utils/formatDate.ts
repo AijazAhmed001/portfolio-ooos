@@ -1,0 +1,1 @@
+export const formatDate=(d:Date)=>new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric'}).format(d);

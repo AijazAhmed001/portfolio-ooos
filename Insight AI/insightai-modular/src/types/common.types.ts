@@ -1,0 +1,1 @@
+export type Theme='dark'|'light'; export interface Option {label:string;value:string}

@@ -1,0 +1,1 @@
+export function ReportFilters(){return <select className="select"><option>All reports</option><option>Revenue</option><option>Customers</option></select>}

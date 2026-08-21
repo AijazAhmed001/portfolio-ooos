@@ -1,0 +1,1 @@
+export const lookbook={image:'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1900&q=88',hotspots:[{x:45,y:25,productId:8},{x:56,y:58,productId:16},{x:48,y:86,productId:6}]}

@@ -1,0 +1,1 @@
+import {Progress} from '../ui/Progress';export function UploadProgress({value}:{value:number}){return <div><span>Uploading dataset… {value}%</span><Progress value={value}/></div>}

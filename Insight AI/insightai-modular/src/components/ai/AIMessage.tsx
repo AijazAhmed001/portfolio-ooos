@@ -1,0 +1,1 @@
+import type {AIMessage as Message} from '../../types/ai.types';import {StreamingText} from './StreamingText';export function AIMessage({message}:{message:Message}){return <div className={`ai-message ${message.role}`}><span>{message.role==='user'?'YOU':'✦ AI ANALYST'}</span><StreamingText text={message.content} streaming={message.streaming}/></div>}

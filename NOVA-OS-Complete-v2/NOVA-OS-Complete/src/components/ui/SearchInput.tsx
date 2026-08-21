@@ -1,0 +1,1 @@
+import {Search} from 'lucide-react';import type {InputHTMLAttributes} from 'react';export default function SearchInput(props:InputHTMLAttributes<HTMLInputElement>){return <label className='search-box'><Search size={15}/><input {...props}/></label>}

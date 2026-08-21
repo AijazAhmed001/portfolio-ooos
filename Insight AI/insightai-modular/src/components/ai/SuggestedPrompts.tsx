@@ -1,0 +1,1 @@
+import {ArrowUpRight} from 'lucide-react';import {aiPrompts} from '../../constants/aiPrompts';export function SuggestedPrompts({onAsk}:{onAsk:(q:string)=>void}){return <div className="suggestions">{aiPrompts.slice(0,4).map(q=><button key={q} onClick={()=>onAsk(q)}>{q}<ArrowUpRight size={13}/></button>)}</div>}

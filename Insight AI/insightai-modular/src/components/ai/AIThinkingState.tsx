@@ -1,0 +1,1 @@
+export function AIThinkingState(){return <div className="thinking"><span/><span/><span/>Analyzing revenue trends…</div>}

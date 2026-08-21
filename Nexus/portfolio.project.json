@@ -1,0 +1,20 @@
+{
+  "name": "Nexus",
+  "slug": "nexus",
+  "index": "02",
+  "eyebrow": "Security operations center",
+  "description": "An enterprise SOC command center for live events, incidents, threat intelligence, network visibility and automated response workflows.",
+  "stack": ["React", "TypeScript", "Cybersecurity", "Analytics"],
+  "tone": "red",
+  "metric": "24/7",
+  "metricLabel": "threat visibility",
+  "github": "https://github.com/AijazAhmed001",
+  "poster": "/posters/nexus.png",
+  "projectDirectory": "nexus-soc-enterprise",
+  "watchDirectories": ["nexus-soc-enterprise/src", "nexus-soc-enterprise/public"],
+  "buildCommand": "npx vite build",
+  "buildDirectory": "nexus-soc-enterprise/dist",
+  "year": "2026",
+  "order": 2,
+  "enabled": true
+}

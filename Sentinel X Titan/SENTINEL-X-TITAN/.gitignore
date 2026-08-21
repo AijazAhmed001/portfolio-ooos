@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+*.log
+.vscode/
+**/bin/
+**/obj/
+.venv/
+__pycache__/
+.DS_Store

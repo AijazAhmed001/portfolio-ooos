@@ -1,0 +1,1 @@
+import type {Report} from '../types/report.types'; export const reports:Report[]=[{id:'r1',name:'Monthly Revenue Report',period:'Apr 1 – Apr 30',updated:'3 min ago'},{id:'r2',name:'Customer Growth Report',period:'Q1 2026',updated:'Yesterday'},{id:'r3',name:'Executive Performance Summary',period:'April 2026',updated:'2 days ago'}];

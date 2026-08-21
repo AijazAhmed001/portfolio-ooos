@@ -1,0 +1,2 @@
+import { STORE } from '../../app/constants';import { useMoney } from '../../hooks/useMoney'
+export function ShippingProgress({subtotal}:{subtotal:number}){const money=useMoney(),remain=Math.max(0,STORE.shippingThreshold-subtotal),pct=Math.min(100,subtotal/STORE.shippingThreshold*100);return <div className="shipping-progress"><p>{remain?<>Add <b>{money(remain)}</b> more for complimentary shipping.</>:<>You unlocked <b>complimentary shipping.</b></>}</p><div><span style={{width:`${pct}%`}}/></div></div>}

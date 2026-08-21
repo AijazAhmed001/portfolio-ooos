@@ -1,0 +1,1 @@
+import type {ReactNode} from 'react';export function ContentArea({children}:{children:ReactNode}){return <main className="content-area">{children}</main>}

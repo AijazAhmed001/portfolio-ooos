@@ -1,0 +1,12 @@
+import { useState } from 'react'
+import type { CSSProperties } from 'react'
+import { motion } from 'framer-motion'
+import { Crosshair,ShieldCheck,X } from 'lucide-react'
+import { Drawer,SeverityBadge } from '../common'
+import { useSocStore } from '../../store/socStore'
+import { IncidentTimeline } from './IncidentTimeline'
+import { EntityGraph } from './EntityGraph'
+import { IncidentEvidence } from './IncidentEvidence'
+import { IncidentOverview } from './IncidentOverview'
+import { AnalystNotes } from './AnalystNotes'
+export function IncidentDrawer(){const threat=useSocStore(s=>s.selectedThreat),select=useSocStore(s=>s.selectThreat),toast=useSocStore(s=>s.addToast),[tab,setTab]=useState('Overview');return <Drawer open={!!threat} onClose={()=>select(null)}>{threat&&<><div className="drawer-head"><div><span className="eyebrow">INCIDENT INVESTIGATION</span><h2>{threat.id}</h2></div><button className="icon-btn" onClick={()=>select(null)}><X size={18}/></button></div><div className="incident-hero"><div className="incident-title-line"><div><SeverityBadge severity={threat.severity}/><h3>{threat.attack}</h3><p>{threat.city}, {threat.country} → {threat.target}</p></div><div className="risk-ring" style={{'--risk':`${threat.risk*3.6}deg`} as CSSProperties}><span><b>{threat.risk}</b>/100</span></div></div><div className="incident-actions"><button className="primary-btn" onClick={()=>toast('Investigation workspace opened','info')}><Crosshair size={16}/>Investigate</button><button className="ghost-btn" onClick={()=>toast('Threat contained successfully')}><ShieldCheck size={16}/>Contain</button></div></div><div className="drawer-tabs">{['Overview','Timeline','Entities','Evidence','Activity'].map(x=><button key={x} className={tab===x?'active':''} onClick={()=>setTab(x)}>{x}</button>)}</div><div className="drawer-content">{tab==='Overview'&&<motion.div initial={{opacity:0,y:6}} animate={{opacity:1,y:0}}><IncidentOverview threat={threat}/></motion.div>}{tab==='Timeline'&&<IncidentTimeline/>}{tab==='Entities'&&<EntityGraph compact/>}{tab==='Evidence'&&<IncidentEvidence/>}{tab==='Activity'&&<AnalystNotes/>}</div></>}</Drawer>}

@@ -1,0 +1,1 @@
+import {useDashboardStore} from '../store/dashboardStore'; export const useDashboardLayout=()=>({widgets:useDashboardStore(s=>s.widgets),setWidgets:useDashboardStore(s=>s.setWidgets)});

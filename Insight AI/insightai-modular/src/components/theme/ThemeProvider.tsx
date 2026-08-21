@@ -1,0 +1,1 @@
+import {useEffect,type ReactNode} from 'react';import {useThemeStore} from '../../store/themeStore';export function ThemeProvider({children}:{children:ReactNode}){const t=useThemeStore(s=>s.theme);useEffect(()=>{document.documentElement.dataset.theme=t},[t]);return children}

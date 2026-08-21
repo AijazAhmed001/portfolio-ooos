@@ -1,0 +1,1 @@
+export {RevenueChart as ComparisonChart} from './RevenueChart';

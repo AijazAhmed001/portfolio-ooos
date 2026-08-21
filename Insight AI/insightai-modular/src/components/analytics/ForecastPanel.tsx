@@ -1,0 +1,1 @@
+import {ForecastCard} from '../dashboard/ForecastCard';export function ForecastPanel(){return <ForecastCard/>}

@@ -1,0 +1,1 @@
+import type { Product } from '../../types/product';import { ProductCard } from './ProductCard';export function ProductCarousel({items}:{items:Product[]}){return <div className="horizontal-products">{items.map(p=><div key={p.id}><ProductCard product={p}/></div>)}</div>}

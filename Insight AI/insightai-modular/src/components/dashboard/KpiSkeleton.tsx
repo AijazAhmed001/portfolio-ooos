@@ -1,0 +1,1 @@
+import {Skeleton} from '../ui/Skeleton';export function KpiSkeleton(){return <Skeleton className="kpi-skeleton"/>}

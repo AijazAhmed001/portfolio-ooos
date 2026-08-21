@@ -1,0 +1,1 @@
+import { Share2 } from 'lucide-react';export function ShareProduct({name}:{name:string}){const share=async()=>{if(navigator.share)await navigator.share({title:name,url:location.href});else await navigator.clipboard.writeText(location.href)};return <button className="share" onClick={share}><Share2/> SHARE</button>}

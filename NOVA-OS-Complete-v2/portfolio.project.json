@@ -1,0 +1,20 @@
+{
+  "name": "Nova",
+  "slug": "nova",
+  "index": "03",
+  "eyebrow": "Desktop operating system",
+  "description": "A complete browser-ready operating system experience with multitasking windows, system tools, widgets, files, settings and Nova AI.",
+  "stack": ["React", "TypeScript", "Electron", "System UI"],
+  "tone": "violet",
+  "metric": "OS",
+  "metricLabel": "complete workspace",
+  "github": "https://github.com/AijazAhmed001",
+  "poster": "/posters/nova.png",
+  "projectDirectory": "NOVA-OS-Complete",
+  "watchDirectories": ["NOVA-OS-Complete/src", "NOVA-OS-Complete/public"],
+  "buildCommand": "npx vite build --outDir portfolio-dist",
+  "buildDirectory": "NOVA-OS-Complete/portfolio-dist",
+  "year": "2026",
+  "order": 3,
+  "enabled": true
+}

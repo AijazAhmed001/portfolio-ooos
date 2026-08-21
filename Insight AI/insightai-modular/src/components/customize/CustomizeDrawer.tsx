@@ -1,0 +1,1 @@
+import {Drawer} from '../ui/Drawer';import {WidgetPicker} from './WidgetPicker';import {LayoutControls} from './LayoutControls';export function CustomizeDrawer({open,onClose}:{open:boolean;onClose:()=>void}){return <Drawer open={open} onClose={onClose}><div className="drawer-pad"><h3>Customize dashboard</h3><WidgetPicker/><LayoutControls/></div></Drawer>}

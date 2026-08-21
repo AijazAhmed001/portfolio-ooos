@@ -1,0 +1,1 @@
+import {Menu,Sparkles} from 'lucide-react';export function MobileHeader(){return <div className="mobile-header"><Menu/><b>INSIGHTAI</b><Sparkles/></div>}

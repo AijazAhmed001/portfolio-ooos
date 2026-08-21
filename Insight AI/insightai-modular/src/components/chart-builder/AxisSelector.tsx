@@ -1,0 +1,1 @@
+import {Select} from '../ui/Select';export function AxisSelector(){return <label>X axis<Select><option>Date</option><option>Region</option><option>Customer</option></Select></label>}

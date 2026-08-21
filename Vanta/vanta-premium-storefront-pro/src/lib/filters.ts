@@ -1,0 +1,3 @@
+import type { Product } from '../types/product';import type { ShopFilters } from '../types/filters'
+export const filterProducts=(items:Product[],f:ShopFilters)=>items.filter(p=>(!f.category||p.category.toLowerCase()===f.category.toLowerCase())&&(!f.collection||p.collection===f.collection)&&(!f.size||p.sizes.includes(f.size))&&(!f.color||p.colors.some(c=>c.id===f.color))&&p.price<=f.maxPrice&&(!f.inStock||p.stock>0))
+export const sortProducts=(items:Product[],sort:string)=>[...items].sort((a,b)=>sort==='newest'?Date.parse(b.createdAt)-Date.parse(a.createdAt):sort==='price-low'?a.price-b.price:sort==='price-high'?b.price-a.price:sort==='best'?Number(Boolean(b.badge))-Number(Boolean(a.badge)):0)

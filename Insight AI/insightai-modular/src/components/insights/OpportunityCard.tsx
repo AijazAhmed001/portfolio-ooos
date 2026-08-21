@@ -1,0 +1,1 @@
+export {InsightCard as OpportunityCard} from './InsightCard';

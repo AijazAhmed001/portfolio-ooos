@@ -1,0 +1,1 @@
+import {Download} from 'lucide-react';import {Button} from '../ui/Button';export function ExportButton({onClick}:{onClick:()=>void}){return <Button variant="secondary" onClick={onClick}><Download size={14}/>Export</Button>}

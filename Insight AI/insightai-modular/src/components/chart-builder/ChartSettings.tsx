@@ -1,0 +1,1 @@
+import {AxisSelector} from './AxisSelector';import {AggregationSelector} from './AggregationSelector';import {GroupBySelector} from './GroupBySelector';export function ChartSettings(){return <div className="chart-settings"><AxisSelector/><AggregationSelector/><GroupBySelector/></div>}

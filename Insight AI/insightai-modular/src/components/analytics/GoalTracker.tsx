@@ -1,0 +1,1 @@
+import {Card} from '../ui/Card';import {Progress} from '../ui/Progress';export function GoalTracker(){return <Card><h3>Monthly revenue goal</h3><div className="goal-value"><b>$184.3K</b><span>of $250K</span></div><Progress value={73.7}/><p>$65.7K remaining</p></Card>}

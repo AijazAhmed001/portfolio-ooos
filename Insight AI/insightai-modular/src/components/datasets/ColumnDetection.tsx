@@ -1,0 +1,1 @@
+export function ColumnDetection({columns}:{columns:string[]}){return <div className="column-list">{columns.slice(0,8).map((c,i)=><div key={c}><b>{c}</b><span>{i===0?'Date':i<4?'Metric':'Category'}</span></div>)}</div>}

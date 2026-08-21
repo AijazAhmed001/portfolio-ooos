@@ -1,0 +1,1 @@
+import {X} from 'lucide-react';export function FilterChip({label,onRemove}:{label:string;onRemove:()=>void}){return <button className="filter-chip" onClick={onRemove}>{label}<X size={12}/></button>}

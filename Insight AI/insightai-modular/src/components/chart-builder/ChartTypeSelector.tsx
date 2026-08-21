@@ -1,0 +1,1 @@
+import {Tabs} from '../ui/Tabs';export function ChartTypeSelector({value,onChange}:{value:string;onChange:(v:string)=>void}){return <Tabs items={['area','line','bar','donut']} value={value} onChange={onChange}/>}

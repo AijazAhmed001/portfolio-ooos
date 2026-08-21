@@ -1,0 +1,1 @@
+export function ChartTooltip(){return null}

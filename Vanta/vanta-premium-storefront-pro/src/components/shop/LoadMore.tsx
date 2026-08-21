@@ -1,0 +1,1 @@
+import { Button } from '../ui/Button';export function LoadMore({visible,total,onClick}:{visible:number;total:number;onClick:()=>void}){return visible<total?<div className="load-more"><Button variant="outline" onClick={onClick}>LOAD MORE — {total-visible} REMAINING</Button></div>:null}

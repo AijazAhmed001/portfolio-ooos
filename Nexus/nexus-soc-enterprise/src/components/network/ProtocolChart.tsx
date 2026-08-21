@@ -1,0 +1,2 @@
+import { Card,Progress,SectionTitle } from '../common'
+export function ProtocolChart(){const data=[['HTTPS',62],['DNS',12],['SSH',9],['SMTP',7],['FTP',4],['Other',6]] as const;return <Card className="span-4"><SectionTitle eyebrow="TRAFFIC MIX" title="Protocol Distribution"/><div className="protocol-bars">{data.map(([x,v])=><div key={x}><div><span>{x}</span><b>{v}%</b></div><Progress value={v}/></div>)}</div></Card>}

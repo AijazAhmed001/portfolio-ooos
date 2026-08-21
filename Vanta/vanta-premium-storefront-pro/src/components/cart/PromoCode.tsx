@@ -1,0 +1,1 @@
+import { useState } from 'react';export function PromoCode(){const [v,setV]=useState(''),[done,setDone]=useState(false);return <div className="promo-inline"><input placeholder="PROMO CODE" value={v} onChange={e=>setV(e.target.value)}/><button onClick={()=>setDone(v.trim().toUpperCase()==='VANTA10')}>APPLY</button>{done&&<small>VANTA10 accepted for demo checkout.</small>}</div>}

@@ -1,0 +1,1 @@
+export const regions=[{name:'UAE',value:184},{name:'USA',value:142},{name:'UK',value:98},{name:'Pakistan',value:74},{name:'Germany',value:61}];

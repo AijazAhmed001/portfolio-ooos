@@ -1,0 +1,1 @@
+import {Button} from '../ui/Button';import {useDashboardStore} from '../../store/dashboardStore';export function LayoutControls(){const reset=useDashboardStore(s=>s.reset);return <Button variant="secondary" onClick={reset}>Reset layout</Button>}

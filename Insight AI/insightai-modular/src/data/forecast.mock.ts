@@ -1,0 +1,1 @@
+export const forecastData=[{d:'May',actual:184,forecast:null},{d:'Jun',actual:null,forecast:201},{d:'Jul',actual:null,forecast:218},{d:'Aug',actual:null,forecast:233}];

@@ -1,0 +1,1 @@
+import {Columns3} from 'lucide-react';import {IconButton} from '../ui/IconButton';export function ColumnSelector(){return <IconButton><Columns3 size={15}/></IconButton>}

@@ -1,0 +1,1 @@
+export const fadeUp={hidden:{opacity:0,y:10},show:{opacity:1,y:0,transition:{duration:.42,ease:[.22,1,.36,1] as [number,number,number,number]}}}; export const fade={hidden:{opacity:0},show:{opacity:1}};

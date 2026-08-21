@@ -1,0 +1,2 @@
+import type { Product } from '../../types/product';import { primaryImage,secondaryImage } from '../../utils/productHelpers';import { ProductBadge } from './ProductBadge';import { WishlistButton } from './WishlistButton'
+export function ProductCardImage({product}:{product:Product}){return <div className="product-card-media"><img className="product-main" src={primaryImage(product)} alt={product.name}/><img className="product-alt" src={secondaryImage(product)} alt=""/><ProductBadge label={product.badge}/><WishlistButton id={product.id}/></div>}

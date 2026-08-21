@@ -1,0 +1,1 @@
+import {useAIStore} from '../store/aiStore'; export const useAIChat=()=>useAIStore();

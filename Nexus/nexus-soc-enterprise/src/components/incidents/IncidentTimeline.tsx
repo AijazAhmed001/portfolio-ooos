@@ -1,0 +1,3 @@
+import { motion } from 'framer-motion'
+const steps=['Suspicious traffic detected','Request behavior analyzed','Injection signature matched','Request blocked by WAF','IP reputation enriched','Threat classified CRITICAL','SOC incident created']
+export function IncidentTimeline(){return <motion.div className="timeline" initial={{opacity:0}} animate={{opacity:1}}>{steps.map((x,i)=><motion.div className="timeline-row" key={x} initial={{opacity:0,x:8}} animate={{opacity:1,x:0}} transition={{delay:i*.07}}><div className="timeline-rail"><i/><span/></div><div><b>{new Date(Date.now()-((steps.length-i)*900)).toLocaleTimeString('en-GB')}</b><p>{x}</p></div></motion.div>)}</motion.div>}

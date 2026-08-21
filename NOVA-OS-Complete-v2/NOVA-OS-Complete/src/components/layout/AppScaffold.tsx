@@ -1,0 +1,2 @@
+import type { ReactNode } from 'react';
+export default function AppScaffold({eyebrow,title,subtitle,actions,children}:{eyebrow:string;title:string;subtitle?:string;actions?:ReactNode;children:ReactNode}){return <div className="app-shell data-app"><div className="page-head compact"><div><span className="eyebrow">{eyebrow}</span><h1>{title}</h1>{subtitle&&<p>{subtitle}</p>}</div>{actions}</div>{children}</div>}

@@ -1,0 +1,3 @@
+import type { ReactNode } from 'react'
+import { Card } from './Card'
+export function MetricCard({label,value,delta,detail,icon}:{label:string;value:string;delta?:string;detail:string;icon:ReactNode}){return <Card className="metric-card" interactive><div className="metric-top"><span className="metric-label">{label}</span><span className="metric-icon">{icon}</span></div><div className="metric-value">{value}</div><div className="metric-foot"><span className="metric-delta">{delta}</span><span>{detail}</span></div><div className="spark"><span/><span/><span/><span/><span/><span/><span/><span/></div></Card>}

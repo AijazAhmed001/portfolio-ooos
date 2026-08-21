@@ -1,0 +1,1 @@
+import {Check} from 'lucide-react';export function ProcessingSteps({done=4}:{done?:number}){const s=['Schema detected','Rows analyzed','Metrics identified','Anomalies scanned'];return <div className="processing-steps">{s.map((x,i)=><div key={x} className={i<done?'done':''}><Check size={14}/>{x}</div>)}</div>}

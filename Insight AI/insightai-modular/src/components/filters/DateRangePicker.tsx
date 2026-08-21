@@ -1,0 +1,1 @@
+import {useFilterStore} from '../../store/filterStore';import {periods} from '../../constants/chartConfig';export function DateRangePicker(){const v=useFilterStore(s=>s.dateRange),set=useFilterStore(s=>s.setDateRange);return <select className="select" value={v} onChange={e=>set(e.target.value)}>{periods.map(x=><option key={x}>{x}</option>)}</select>}

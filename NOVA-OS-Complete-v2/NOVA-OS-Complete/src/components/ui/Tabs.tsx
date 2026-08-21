@@ -1,0 +1,1 @@
+export default function Tabs({items,value,onChange}:{items:string[];value:string;onChange:(v:string)=>void}){return <div className='segmented'>{items.map(x=><button key={x} className={value===x?'active':''} onClick={()=>onChange(x)}>{x}</button>)}</div>}

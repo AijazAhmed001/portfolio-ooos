@@ -1,0 +1,4 @@
+import { PageHeader,Card,SeverityBadge } from '../../components/common'
+import { iocs } from '../../data/iocs'
+import type { Severity } from '../../types'
+export function IndicatorsPage(){return <><PageHeader eyebrow="IOC MANAGEMENT" title="Indicators of Compromise" description="Track malicious infrastructure, file hashes, URLs and domains observed across the environment."/><Card><div className="vuln-table"><div className="vuln-row head"><span>Type</span><span>Indicator</span><span>Risk</span><span>Source</span><span>Observed</span><span>Action</span></div>{iocs.map(i=><div className="vuln-row" key={i.value}><b>{i.type}</b><span className="mono">{i.value}</span><SeverityBadge severity={i.risk as Severity}/><span>{i.source}</span><span>{i.observed}</span><button className="ghost-btn small">Investigate</button></div>)}</div></Card></>}

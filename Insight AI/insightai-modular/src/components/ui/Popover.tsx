@@ -1,0 +1,1 @@
+import type {ReactNode} from 'react'; export function Popover({children}:{children:ReactNode}){return <div className="popover">{children}</div>}

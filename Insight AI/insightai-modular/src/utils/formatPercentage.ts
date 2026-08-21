@@ -1,0 +1,1 @@
+export const formatPercentage=(v:number)=>`${v.toFixed(1)}%`;

@@ -1,0 +1,1 @@
+import {Card} from '../ui/Card';import {ForecastChart} from '../charts/ForecastChart';export function ForecastCard(){return <Card><div className="chart-head"><div><span>Revenue forecast</span><b>$218.4K</b><small>+11.7% projected</small></div></div><ForecastChart/></Card>}

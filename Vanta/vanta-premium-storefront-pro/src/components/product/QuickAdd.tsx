@@ -1,0 +1,1 @@
+import type { Product } from '../../types/product';import { useCartStore } from '../../store/cartStore';export function QuickAdd({product}:{product:Product}){const add=useCartStore(s=>s.add);return <button className="quick-add" onClick={()=>add(product,product.colors[0].id,product.sizes[0])}>QUICK ADD →</button>}

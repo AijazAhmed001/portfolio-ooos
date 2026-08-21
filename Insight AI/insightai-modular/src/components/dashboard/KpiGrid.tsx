@@ -1,0 +1,1 @@
+import {metrics} from '../../data/dashboard.mock';import {KpiCard} from './KpiCard';export function KpiGrid(){return <div className="kpi-grid">{metrics.map((m,i)=><KpiCard key={m.key} metric={m} index={i}/>)}</div>}

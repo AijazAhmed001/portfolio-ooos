@@ -1,0 +1,1 @@
+import {useFilterStore} from '../../store/filterStore';export function SegmentFilter(){const f=useFilterStore();return <select className="select" value={f.plan} onChange={e=>f.setPlan(e.target.value)}><option>All</option><option>Enterprise</option><option>Growth</option><option>Starter</option></select>}

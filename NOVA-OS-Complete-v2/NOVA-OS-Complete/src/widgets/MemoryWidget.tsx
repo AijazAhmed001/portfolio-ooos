@@ -1,0 +1,1 @@
+import {usePerformance} from '../lib/usePerformance';export default function MemoryWidget(){const{latest}=usePerformance();return <div className='status-chip'><span/>RAM {Number(latest?.ramPercent||0).toFixed(0)}%</div>}

@@ -1,0 +1,1 @@
+export function IOCRelations(){return <div className="correlation-grid">{[['Incidents','4'],['Security Events','17'],['Devices','2'],['Users','3']].map(([a,b])=><div key={a}><span>{a}</span><b>{b}</b></div>)}</div>}

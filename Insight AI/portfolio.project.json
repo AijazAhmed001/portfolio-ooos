@@ -1,0 +1,20 @@
+{
+  "name": "Insight AI",
+  "slug": "insight-ai",
+  "index": "01",
+  "eyebrow": "AI analytics platform",
+  "description": "A modular intelligence workspace that turns complex datasets into interactive dashboards, visual stories, reports and actionable decisions.",
+  "stack": ["React", "TypeScript", "AI", "Data Visualization"],
+  "tone": "blue",
+  "metric": "AI",
+  "metricLabel": "decision intelligence",
+  "github": "https://github.com/AijazAhmed001",
+  "poster": "/posters/insight-ai.png",
+  "projectDirectory": "insightai-modular",
+  "watchDirectories": ["insightai-modular/src", "insightai-modular/public"],
+  "buildCommand": "npx vite build",
+  "buildDirectory": "insightai-modular/dist",
+  "year": "2026",
+  "order": 1,
+  "enabled": true
+}

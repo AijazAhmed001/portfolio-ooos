@@ -1,0 +1,1 @@
+export const transitions={micro:{duration:.16,ease:'easeOut'},panel:{duration:.3,ease:[.22,1,.36,1]},chart:{duration:.8,ease:[.22,1,.36,1]}};

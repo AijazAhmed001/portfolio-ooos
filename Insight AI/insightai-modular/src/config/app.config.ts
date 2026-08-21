@@ -1,0 +1,1 @@
+export const appConfig={name:'InsightAI',description:'AI-powered analytics workspace',version:'2.0.0'} as const;

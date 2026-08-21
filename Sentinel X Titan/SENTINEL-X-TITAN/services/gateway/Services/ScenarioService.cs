@@ -1,0 +1,16 @@
+using Microsoft.AspNetCore.SignalR;
+using SentinelX.Gateway.Hubs;
+using SentinelX.Gateway.Models;
+namespace SentinelX.Gateway.Services;
+public sealed class ScenarioService(LabStateService lab,IHubContext<SecurityHub> hub){
+  public async Task StartAsync(string scenario,CancellationToken ct){
+    lab.Reset(); var incident=BuildIncident(scenario); lab.SetIncident(incident); await hub.Clients.All.SendAsync("incidentCreated",incident,ct);
+    foreach(var spec in BuildEvents(scenario)){await Task.Delay(1200,ct);var e=new SecurityEvent(Guid.NewGuid().ToString("N"),DateTimeOffset.UtcNow,"SENTINEL Detection Engine",spec.machine,spec.title,spec.detail,spec.severity,spec.tactic);lab.ApplyEvent(incident,e);await hub.Clients.All.SendAsync("securityEvent",new{incident,e,machines=lab.Machines},ct);} }
+  static Incident BuildIncident(string s)=>new(){Id=$"INC-2026-{Random.Shared.Next(810,899)}",Title=s switch{"apt"=>"Potential Multi-stage Production Intrusion","impact"=>"High-volume File Modification Incident","lateral"=>"Cross-zone Lateral Movement Investigation","auth"=>"Suspicious Authentication Chain",_=>"Security Telemetry Correlation Incident"},Severity=s is "auth" or "recon"?"HIGH":"CRITICAL",Risk=s=="auth"?78:94,Confidence=s=="apt"?91:86,Assets=s switch{"auth"=>["AD-DC-01"],"recon"=>["EDGE-FW-01","WAF-01"],"endpoint"=>["HR-PC-01"],"lateral"=>["DEV-PC-01","DEVOPS-01","API-PROD-01","DB-PRIMARY-01"],"impact"=>["FILE-SRV-01","BACKUP-01"],"exfil"=>["DB-PRIMARY-01","API-PROD-01"],"web"=>["WEB-PROD-01","WAF-01"],_=>["WEB-PROD-01","DEVOPS-01","API-PROD-01","DB-PRIMARY-01"]}};
+  static IEnumerable<(string machine,string title,string detail,string severity,string tactic)> BuildEvents(string s)=>s switch{
+    "auth"=>[("AD-DC-01","Authentication failures","Repeated synthetic failures exceed baseline.","MEDIUM","Credential Access"),("AD-DC-01","Successful unfamiliar login","Successful lab session follows the failures.","HIGH","Initial Access")],
+    "lateral"=>[("DEV-PC-01","Endpoint anomaly","Developer endpoint deviates from baseline.","HIGH","Execution"),("DEVOPS-01","Internal authentication path","Identity activity appears on CI/CD host.","HIGH","Lateral Movement"),("API-PROD-01","Cross-zone session","Synthetic activity reaches application zone.","CRITICAL","Lateral Movement"),("DB-PRIMARY-01","Sensitive database access","Data-tier telemetry crosses critical threshold.","CRITICAL","Collection")],
+    "impact"=>[("FILE-SRV-01","File-change velocity spike","Disposable lab files are changing above baseline.","CRITICAL","Impact"),("BACKUP-01","Recovery point verified","Clean immutable lab snapshot predates incident.","HIGH","Recovery")],
+    _=>[("WEB-PROD-01","External traffic anomaly","Synthetic traffic deviates from production baseline.","MEDIUM","Reconnaissance"),("WEB-PROD-01","Host correlation","Multiple controls agree the host is suspicious.","HIGH","Initial Access"),("DEVOPS-01","Engineering-zone anomaly","Correlated identity activity appears on CI/CD.","HIGH","Lateral Movement"),("API-PROD-01","Application-zone expansion","Incident graph expands into API tier.","CRITICAL","Lateral Movement"),("DB-PRIMARY-01","Sensitive data-tier activity","Database telemetry reaches critical threshold.","CRITICAL","Collection")]
+  };
+}

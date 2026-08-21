@@ -1,0 +1,1 @@
+export {InsightCard as AnomalyInsight} from './InsightCard';

@@ -1,0 +1,12 @@
+title: SENTINEL-X Demo Suspicious Logon
+id: 6f092852-demo-4df9-bd4e-sentinelx
+status: experimental
+description: Demonstration rule for synthetic lab authentication telemetry only.
+logsource:
+  category: authentication
+  product: windows
+detection:
+  selection:
+    sentinel_demo: true
+  condition: selection
+level: high

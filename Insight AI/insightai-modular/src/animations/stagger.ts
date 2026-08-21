@@ -1,0 +1,1 @@
+export const staggerContainer={hidden:{},show:{transition:{staggerChildren:.055}}};

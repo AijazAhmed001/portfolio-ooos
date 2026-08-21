@@ -1,0 +1,1 @@
+export const keyboardShortcuts=[{keys:'Ctrl/⌘ + K',action:'Open search'},{keys:'A',action:'Open AI analyst'},{keys:'E',action:'Export report'},{keys:'Esc',action:'Close overlays'}];

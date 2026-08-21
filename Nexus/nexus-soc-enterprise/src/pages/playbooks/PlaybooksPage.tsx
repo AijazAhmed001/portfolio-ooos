@@ -1,0 +1,5 @@
+import { Workflow } from 'lucide-react'
+import { Card,PageHeader,SectionTitle } from '../../components/common'
+import { PlaybookFlow } from '../../components/playbooks'
+import { playbooks } from '../../data/playbooks'
+export function PlaybooksPage(){return <><PageHeader eyebrow="SOAR" title="Automated Response Playbooks" description="Orchestrate repeatable response actions with analyst-controlled automation."/><div className="rules-grid">{playbooks.map((p,i)=><Card className="rule-card" interactive key={p.name}><div className="rule-top"><div className="rule-icon"><Workflow size={18}/></div><span className="status status-healthy"><i/>Enabled</span></div><span className="mono muted">PLAYBOOK-{200+i}</span><h3>{p.name}</h3><p>Trigger: {p.trigger}</p><div className="rule-foot"><span>{p.runs} runs</span><span>{p.success}% success</span></div></Card>)}</div><Card className="playbook-main"><SectionTitle eyebrow="SIMULATION" title={playbooks[0].name}/><PlaybookFlow steps={playbooks[0].steps}/></Card></>}

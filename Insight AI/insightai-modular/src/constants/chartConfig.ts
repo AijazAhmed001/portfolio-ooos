@@ -1,0 +1,1 @@
+export const periods=['Last 7 days','Last 30 days','This quarter','This year']; export const breakdowns=['Region','Plan','Channel'];

@@ -1,0 +1,1 @@
+import {useEffect} from 'react';export function useKeyboardShortcut(key:string,fn:()=>void){useEffect(()=>{const h=(e:KeyboardEvent)=>{if(e.key.toLowerCase()===key.toLowerCase())fn()};addEventListener('keydown',h);return()=>removeEventListener('keydown',h)},[key,fn])}

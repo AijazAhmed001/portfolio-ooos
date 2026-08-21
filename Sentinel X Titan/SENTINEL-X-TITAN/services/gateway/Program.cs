@@ -1,0 +1,22 @@
+using SentinelX.Gateway.Hubs;
+using SentinelX.Gateway.Services;
+
+var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("http://0.0.0.0:5080");
+builder.Services.AddCors(o => o.AddDefaultPolicy(p => p.AllowAnyHeader().AllowAnyMethod().AllowCredentials().SetIsOriginAllowed(_ => true)));
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<LabStateService>();
+builder.Services.AddSingleton<ScenarioService>();
+builder.Services.AddHostedService<EnvironmentPulseWorker>();
+var app = builder.Build();
+app.UseCors();
+app.MapGet("/health", () => Results.Ok(new { service="sentinel-x-gateway", status="healthy", utc=DateTimeOffset.UtcNow }));
+app.MapGet("/api/machines", (LabStateService lab) => lab.Machines);
+app.MapGet("/api/incidents", (LabStateService lab) => lab.Incidents);
+app.MapGet("/api/overview", (LabStateService lab) => lab.Overview());
+app.MapPost("/api/range/start/{scenario}", async (string scenario, ScenarioService svc, CancellationToken ct) => { await svc.StartAsync(scenario, ct); return Results.Accepted(); });
+app.MapPost("/api/range/reset", (LabStateService lab) => { lab.Reset(); return Results.Ok(lab.Overview()); });
+app.MapPost("/api/incidents/{id}/contain", (string id, LabStateService lab) => lab.Contain(id) ? Results.Ok() : Results.NotFound());
+app.MapPost("/api/incidents/{id}/recover", (string id, LabStateService lab) => lab.Recover(id) ? Results.Ok() : Results.NotFound());
+app.MapHub<SecurityHub>("/hubs/security");
+app.Run();

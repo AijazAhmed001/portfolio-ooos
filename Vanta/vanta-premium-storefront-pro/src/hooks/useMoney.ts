@@ -1,0 +1,1 @@
+import { usePreferencesStore } from '../store/preferencesStore';import { formatCurrency } from '../lib/currency';export function useMoney(){const currency=usePreferencesStore(s=>s.currency);return (value:number)=>formatCurrency(value,currency)}

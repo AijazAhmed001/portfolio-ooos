@@ -1,0 +1,1 @@
+import { motion } from 'motion/react';export function MaskReveal({children}:{children:React.ReactNode}){return <span className="mask"><motion.span initial={{y:'110%'}} whileInView={{y:0}} viewport={{once:true}} transition={{duration:.8,ease:[.22,1,.36,1]}}>{children}</motion.span></span>}

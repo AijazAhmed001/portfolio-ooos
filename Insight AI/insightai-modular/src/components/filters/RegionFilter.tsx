@@ -1,0 +1,1 @@
+import {useFilterStore} from '../../store/filterStore';export function RegionFilter(){const f=useFilterStore();return <select className="select" value={f.region} onChange={e=>f.setRegion(e.target.value)}><option>All</option><option>UAE</option><option>USA</option><option>UK</option><option>Pakistan</option></select>}

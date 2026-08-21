@@ -1,0 +1,1 @@
+export function RangeSlider({value,max,onChange}:{value:number;max:number;onChange:(v:number)=>void}){return <input className="range" type="range" min={0} max={max} value={value} onChange={e=>onChange(Number(e.target.value))}/>} 

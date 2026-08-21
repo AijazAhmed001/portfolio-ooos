@@ -1,0 +1,1 @@
+export interface Dataset {id:string;name:string;type:'CSV'|'XLSX'|'JSON';rows:number;columns:number;updated:string;status:'Ready'|'Processing';quality:number} export interface ParsedDataset {name:string;rows:Record<string,unknown>[];columns:string[]}

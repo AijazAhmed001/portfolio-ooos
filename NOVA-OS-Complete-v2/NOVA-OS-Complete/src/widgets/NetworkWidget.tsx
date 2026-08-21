@@ -1,0 +1,1 @@
+import {usePerformance} from '../lib/usePerformance';import {formatRate} from '../lib/format';export default function NetworkWidget(){const{latest}=usePerformance();return <div className='status-chip'><span/>↓ {formatRate(latest?.download)}</div>}

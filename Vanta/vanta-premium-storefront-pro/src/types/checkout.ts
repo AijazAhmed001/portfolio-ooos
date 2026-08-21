@@ -1,0 +1,1 @@
+export type CheckoutForm = { email:string; firstName:string; lastName:string; address:string; city:string; country:string; postalCode:string; phone:string; shipping:'standard'|'express'; payment:'card'|'paypal'|'apple'; cardName:string }

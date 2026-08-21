@@ -1,0 +1,1 @@
+import {Database} from 'lucide-react'; import {Button} from './Button'; export function EmptyState({title='No data',text='Choose a dataset to continue.',action}:{title?:string;text?:string;action?:()=>void}){return <div className="empty-state"><Database/><h3>{title}</h3><p>{text}</p>{action&&<Button onClick={action}>Select dataset</Button>}</div>}

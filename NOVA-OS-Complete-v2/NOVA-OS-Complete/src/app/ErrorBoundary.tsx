@@ -1,0 +1,2 @@
+import React from 'react';
+export default class ErrorBoundary extends React.Component<{children:React.ReactNode},{error:string|null}>{state={error:null};static getDerivedStateFromError(e:Error){return{error:e.message}}render(){return this.state.error?<div className='app-shell'><div className='surface padded'><h2>NOVA recovered from a UI error</h2><p>{this.state.error}</p></div></div>:this.props.children}}

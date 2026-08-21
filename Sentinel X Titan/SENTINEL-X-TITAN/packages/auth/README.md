@@ -1,0 +1,3 @@
+# auth
+
+Shared package boundary.

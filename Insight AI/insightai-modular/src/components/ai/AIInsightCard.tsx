@@ -1,0 +1,1 @@
+import {Sparkles} from 'lucide-react';export function AIInsightCard(){return <div className="ai-insight-card"><Sparkles/><b>Revenue growth</b><strong>+18.4%</strong><p>Enterprise expansion is the primary driver.</p></div>}

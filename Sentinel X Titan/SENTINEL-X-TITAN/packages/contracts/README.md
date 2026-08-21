@@ -1,0 +1,3 @@
+# contracts
+
+Shared package boundary.

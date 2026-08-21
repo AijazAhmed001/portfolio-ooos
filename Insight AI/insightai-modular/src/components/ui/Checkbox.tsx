@@ -1,0 +1,1 @@
+import type {InputHTMLAttributes} from 'react'; export function Checkbox(p:InputHTMLAttributes<HTMLInputElement>){return <input className="checkbox" type="checkbox" {...p}/>}

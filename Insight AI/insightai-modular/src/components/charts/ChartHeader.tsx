@@ -1,0 +1,1 @@
+import {MoreHorizontal} from 'lucide-react';import {IconButton} from '../ui/IconButton';export function ChartHeader({title,value}:{title:string;value?:string}){return <div className="chart-head"><div><span>{title}</span>{value&&<><b>{value}</b><small>↑ 18.4%</small></>}</div><IconButton><MoreHorizontal size={16}/></IconButton></div>}

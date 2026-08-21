@@ -1,0 +1,1 @@
+export default function TablePagination({page,onChange}:{page:number;onChange:(n:number)=>void}){return <div className='choice-row'><button onClick={()=>onChange(Math.max(1,page-1))}>Previous</button><button>{page}</button><button onClick={()=>onChange(page+1)}>Next</button></div>}

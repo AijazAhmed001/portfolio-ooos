@@ -1,0 +1,1 @@
+import {RegionFilter} from './RegionFilter';import {SegmentFilter} from './SegmentFilter';import {DateRangePicker} from './DateRangePicker';export function GlobalFilters(){return <div className="global-filters"><DateRangePicker/><RegionFilter/><SegmentFilter/></div>}

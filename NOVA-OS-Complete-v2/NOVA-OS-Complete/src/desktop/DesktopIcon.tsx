@@ -1,0 +1,1 @@
+import type { LucideIcon } from 'lucide-react';export default function DesktopIcon({title,icon:Icon,onOpen}:{title:string;icon:LucideIcon;onOpen:()=>void}){return <button className='desktop-icon' onDoubleClick={onOpen}><span className='desktop-icon-box'><Icon size={25}/></span><span>{title}</span></button>}

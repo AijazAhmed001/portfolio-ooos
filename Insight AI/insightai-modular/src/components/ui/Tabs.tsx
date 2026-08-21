@@ -1,0 +1,1 @@
+export function Tabs({items,value,onChange}:{items:string[];value:string;onChange:(v:string)=>void}){return <div className="tabs">{items.map(x=><button key={x} className={x===value?'active':''} onClick={()=>onChange(x)}>{x}</button>)}</div>}

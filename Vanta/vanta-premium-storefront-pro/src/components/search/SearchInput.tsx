@@ -1,0 +1,1 @@
+import { Search } from 'lucide-react';export function SearchInput({value,onChange,onSubmit}:{value:string;onChange:(v:string)=>void;onSubmit?:()=>void}){return <div className="search-field"><Search/><input autoFocus value={value} onChange={e=>onChange(e.target.value)} onKeyDown={e=>e.key==='Enter'&&onSubmit?.()} placeholder="What are you looking for?"/><span>ESC</span></div>}

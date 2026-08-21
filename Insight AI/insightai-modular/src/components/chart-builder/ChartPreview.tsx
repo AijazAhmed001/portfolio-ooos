@@ -1,0 +1,1 @@
+import {RevenueAreaChart} from '../charts/RevenueAreaChart';export function ChartPreview(){return <div className="chart-preview"><div className="chart-box large"><RevenueAreaChart/></div></div>}

@@ -1,0 +1,1 @@
+import {Tabs} from '../ui/Tabs';import {useState} from 'react';export function InsightFilters(){const [v,setV]=useState('All');return <Tabs items={['All','Opportunities','Risks','Anomalies']} value={v} onChange={setV}/>}

@@ -1,0 +1,1 @@
+import {ArrowUpRight} from 'lucide-react';export function InsightCard({type,title,text,impact}:{type:string;title:string;text:string;impact:string}){return <div className="mini-insight"><div className="eyebrow">{type}</div><h4>{title}</h4><p>{text}</p><b>{impact}</b><button>Investigate <ArrowUpRight size={13}/></button></div>}

@@ -1,0 +1,1 @@
+import {Drawer} from '../ui/Drawer';export function FilterDrawer({open,onClose}:{open:boolean;onClose:()=>void}){return <Drawer open={open} onClose={onClose}><div className="drawer-pad"><h3>Filters</h3><p>Filter controls can be expanded here.</p></div></Drawer>}

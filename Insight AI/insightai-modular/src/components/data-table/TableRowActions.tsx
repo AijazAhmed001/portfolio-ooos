@@ -1,0 +1,1 @@
+import {MoreHorizontal} from 'lucide-react';export function TableRowActions(){return <button className="icon-btn"><MoreHorizontal size={15}/></button>}

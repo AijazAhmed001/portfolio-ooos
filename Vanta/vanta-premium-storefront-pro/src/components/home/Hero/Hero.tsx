@@ -1,0 +1,1 @@
+import { HeroMedia } from './HeroMedia';import { HeroContent } from './HeroContent';import { HeroIndicator } from './HeroIndicator';export function Hero(){return <section className="hero"><HeroMedia/><HeroContent/><HeroIndicator/></section>}

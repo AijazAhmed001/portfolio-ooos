@@ -1,0 +1,2 @@
+import type { Product } from '../../types/product';import { Reveal } from '../animation/Reveal'
+export function ProductStorytelling({product}:{product:Product}){const images=product.colors[0].images;return <section className="pdp-story"><Reveal className="story-copy-block"><span className="eyebrow">01 / DESIGN</span><h2>BUILT AROUND<br/>MOVEMENT.</h2><p>{product.description}</p><div className="feature-list">{product.features.map((x,i)=><div key={x}><span>0{i+1}</span><b>{x}</b></div>)}</div></Reveal><img src={images[1]||images[0]} alt={`${product.name} detail`}/></section>}

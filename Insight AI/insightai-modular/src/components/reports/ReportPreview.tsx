@@ -1,0 +1,1 @@
+export function ReportPreview(){return <div className="report-preview">Report preview</div>}

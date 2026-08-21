@@ -1,0 +1,1 @@
+import {downloadFile} from './downloadFile'; export const exportCSV=(rows:Record<string,unknown>[],name='insightai-report.csv')=>{if(!rows.length)return;const keys=Object.keys(rows[0]);const body=[keys.join(','),...rows.map(r=>keys.map(k=>JSON.stringify(r[k]??'')).join(','))].join('\n');downloadFile(new Blob([body],{type:'text/csv'}),name)};

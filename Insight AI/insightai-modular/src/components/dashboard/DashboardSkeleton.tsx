@@ -1,0 +1,1 @@
+import {Skeleton} from '../ui/Skeleton';export function DashboardSkeleton(){return <div><div className="kpi-grid">{[1,2,3,4].map(x=><Skeleton key={x} className="kpi-skeleton"/>)}</div><Skeleton className="dashboard-big-skeleton"/></div>}

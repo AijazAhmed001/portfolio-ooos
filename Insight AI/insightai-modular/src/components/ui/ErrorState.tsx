@@ -1,0 +1,1 @@
+import {AlertTriangle} from 'lucide-react'; export function ErrorState({text='Something went wrong.'}:{text?:string}){return <div className="error-state"><AlertTriangle/><b>Unable to continue</b><p>{text}</p></div>}

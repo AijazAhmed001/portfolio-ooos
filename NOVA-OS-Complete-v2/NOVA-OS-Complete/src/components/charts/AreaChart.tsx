@@ -1,0 +1,1 @@
+export default function AreaChart({value=0}:{value?:number}){return <div className='surface padded module-fragment'><strong>AreaChart</strong><div className='progress large'><i style={{width:`${Math.max(0,Math.min(100,value))}%`}}/></div></div>}

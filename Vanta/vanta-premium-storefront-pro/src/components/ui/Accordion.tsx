@@ -1,0 +1,2 @@
+import { useState } from 'react';import { Plus,Minus } from 'lucide-react'
+export function Accordion({title,children}:{title:string;children:React.ReactNode}){const [open,setOpen]=useState(false);return <div className="accordion"><button onClick={()=>setOpen(v=>!v)}>{title}{open?<Minus size={16}/>:<Plus size={16}/>}</button><div className={`accordion-body ${open?'open':''}`}>{open&&<div>{children}</div>}</div></div>}

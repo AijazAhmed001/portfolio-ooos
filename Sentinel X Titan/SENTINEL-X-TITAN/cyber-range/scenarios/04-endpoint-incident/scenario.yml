@@ -1,0 +1,5 @@
+id: 04-endpoint-incident
+mode: synthetic-defensive
+isolation_required: true
+external_targets_allowed: false
+reset_after_run: true

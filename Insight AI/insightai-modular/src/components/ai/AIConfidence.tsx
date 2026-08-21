@@ -1,0 +1,1 @@
+export function AIConfidence(){return <div className="confidence"><span>Confidence</span><div><i/></div><b>High</b></div>}

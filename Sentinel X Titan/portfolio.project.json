@@ -1,0 +1,20 @@
+{
+  "name": "Sentinel X Titan",
+  "slug": "sentinel-x-titan",
+  "index": "04",
+  "eyebrow": "AI cyber defense",
+  "description": "A next-generation security platform combining autonomous defense, analytics, cyber-range tooling and enterprise-grade security services.",
+  "stack": ["React", "AI", "Cybersecurity", "Enterprise"],
+  "tone": "amber",
+  "metric": "X",
+  "metricLabel": "autonomous defense",
+  "github": "https://github.com/AijazAhmed001",
+  "poster": "/posters/sentinel-x-titan.png",
+  "projectDirectory": "SENTINEL-X-TITAN/apps/web",
+  "watchDirectories": ["SENTINEL-X-TITAN/apps/web/src", "SENTINEL-X-TITAN/apps/web/public"],
+  "buildCommand": "npx vite build --outDir \"../../../../Aijaz-Premium-Portfolio-Complete/.project-builds/sentinel-x-titan\" --configLoader runner",
+  "buildDirectory": "../Aijaz-Premium-Portfolio-Complete/.project-builds/sentinel-x-titan",
+  "year": "2026",
+  "order": 4,
+  "enabled": true
+}

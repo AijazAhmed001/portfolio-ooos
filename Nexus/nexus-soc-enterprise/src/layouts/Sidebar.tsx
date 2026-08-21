@@ -1,0 +1,16 @@
+import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import type { LucideIcon } from 'lucide-react'
+import { Activity,Box,ChevronRight,Crosshair,FileBarChart,Fingerprint,Gauge,Globe2,Hexagon,LayoutDashboard,ListFilter,Network,PanelLeftClose,Play,Radar,Settings,ShieldAlert,Siren,TerminalSquare,UserRoundSearch,Users,X,Zap } from 'lucide-react'
+
+const nav:{label:string;items:[string,string,LucideIcon][]}[]=[
+  {label:'Overview',items:[['Dashboard','/dashboard',LayoutDashboard],['Executive','/executive',Gauge]]},
+  {label:'Detection',items:[['Alerts','/alerts',Siren],['Threats','/threats',ShieldAlert],['Live Events','/events',Activity],['Detection Rules','/detection-rules',Radar]]},
+  {label:'Response',items:[['Incidents','/incidents',Crosshair],['Investigations','/investigations',UserRoundSearch],['Playbooks','/playbooks',Play]]},
+  {label:'Intelligence',items:[['Threat Intel','/intelligence',Globe2],['Indicators','/indicators',Fingerprint],['Threat Actors','/threat-actors',Users]]},
+  {label:'Infrastructure',items:[['Network','/network',Network],['Endpoints','/endpoints',Box],['Assets','/assets',Box],['Vulnerabilities','/vulnerabilities',Zap]]},
+  {label:'Identity',items:[['Users','/users',Users],['Authentication','/authentication',Fingerprint],['User Risk','/user-risk',ShieldAlert]]},
+  {label:'Analytics',items:[['Analytics','/analytics',FileBarChart],['SIEM Search','/search',TerminalSquare],['Reports','/reports',ListFilter]]},
+]
+function Logo({collapsed}:{collapsed:boolean}){return <div className="logo-wrap"><div className="logo-mark"><Hexagon size={19}/><span className="logo-core"/></div>{!collapsed&&<motion.div initial={{opacity:0}} animate={{opacity:1}} className="logo-copy"><b>NEXUS</b><span>SECURITY OPERATIONS</span></motion.div>}</div>}
+export function Sidebar({collapsed,mobileOpen,onCollapse,onClose}:{collapsed:boolean;mobileOpen:boolean;onCollapse:()=>void;onClose:()=>void}){return <aside className={`sidebar ${mobileOpen?'mobile-open':''}`}><div className="sidebar-top"><Logo collapsed={collapsed}/><button aria-label="Close navigation" className="icon-btn mobile-close" onClick={onClose}><X size={18}/></button></div><nav className="side-nav" aria-label="Primary navigation">{nav.map(group=><div className="nav-group" key={group.label}>{!collapsed&&<span className="nav-label">{group.label}</span>}{group.items.map(([label,path,Icon])=><NavLink key={path} to={path} className={({isActive})=>`nav-item ${isActive?'active':''}`} title={collapsed?label:undefined}><Icon size={17}/>{!collapsed&&<span>{label}</span>}{label==='Alerts'&&!collapsed&&<b className="nav-count">12</b>}<i className="active-rail"/></NavLink>)}</div>)}</nav><div className="sidebar-health" title="All systems operational"><span className="health-orbit"><i/></span>{!collapsed&&<div><b>System healthy</b><span>24 services online</span></div>}</div><div className="sidebar-bottom"><NavLink to="/settings" className={({isActive})=>`nav-item ${isActive?'active':''}`}><Settings size={17}/>{!collapsed&&<span>Settings</span>}<i className="active-rail"/></NavLink><button aria-label={collapsed?'Expand sidebar':'Collapse sidebar'} className="collapse-btn" onClick={onCollapse}>{collapsed?<ChevronRight size={16}/>:<><PanelLeftClose size={16}/><span>Collapse</span></>}</button></div></aside>}

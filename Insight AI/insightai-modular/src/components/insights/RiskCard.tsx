@@ -1,0 +1,1 @@
+export {InsightCard as RiskCard} from './InsightCard';

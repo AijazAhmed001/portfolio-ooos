@@ -1,0 +1,1 @@
+export default function Toggle({checked,onChange,label}:{checked:boolean;onChange:(v:boolean)=>void;label?:string}){return <button className={`nova-toggle ${checked?'on':''}`} onClick={()=>onChange(!checked)} aria-pressed={checked}><i/>{label&&<span>{label}</span>}</button>}

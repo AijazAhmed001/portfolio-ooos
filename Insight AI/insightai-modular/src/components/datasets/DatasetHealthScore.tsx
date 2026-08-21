@@ -1,0 +1,1 @@
+import {Progress} from '../ui/Progress';export function DatasetHealthScore({value}:{value:number}){return <div className="health-score"><div><span>Data quality</span><b>{value}/100</b></div><Progress value={value}/></div>}

@@ -1,0 +1,1 @@
+import type {ReactNode} from 'react';export default function Dialog({open,children}:{open:boolean;children:ReactNode}){return open?<div className='palette-backdrop'><section className='surface padded'>{children}</section></div>:null}

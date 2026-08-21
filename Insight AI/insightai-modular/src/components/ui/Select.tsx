@@ -1,0 +1,1 @@
+import type {SelectHTMLAttributes} from 'react'; export function Select(p:SelectHTMLAttributes<HTMLSelectElement>){return <select className="select" {...p}/>}

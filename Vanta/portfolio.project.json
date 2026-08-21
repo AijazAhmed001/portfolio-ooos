@@ -1,0 +1,20 @@
+{
+  "name": "Vanta",
+  "slug": "vanta",
+  "index": "05",
+  "eyebrow": "Premium commerce",
+  "description": "A polished premium storefront with discovery, collections, product detail, wishlist, cart and a complete multi-step checkout journey.",
+  "stack": ["React", "TypeScript", "E-commerce", "UX"],
+  "tone": "green",
+  "metric": "360°",
+  "metricLabel": "shopping journey",
+  "github": "https://github.com/AijazAhmed001",
+  "poster": "/posters/vanta.png",
+  "projectDirectory": "vanta-premium-storefront-pro",
+  "watchDirectories": ["vanta-premium-storefront-pro/src", "vanta-premium-storefront-pro/public"],
+  "buildCommand": "npx vite build",
+  "buildDirectory": "vanta-premium-storefront-pro/dist",
+  "year": "2026",
+  "order": 5,
+  "enabled": true
+}

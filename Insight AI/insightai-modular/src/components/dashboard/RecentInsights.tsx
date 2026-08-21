@@ -1,0 +1,1 @@
+export function RecentInsights(){return <div className="recent-insights"><h3>Recent insights</h3><p>✦ Revenue anomaly detected · 12m</p><p>↑ Conversion increased 2.4% · 2h</p><p>● Enterprise became top segment · Yesterday</p></div>}

@@ -1,0 +1,1 @@
+import type { Product } from '../../types/product';import { ProductCard } from '../product/ProductCard';export function WishlistItem({product}:{product:Product}){return <ProductCard product={product}/>}

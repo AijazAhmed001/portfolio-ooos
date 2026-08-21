@@ -1,0 +1,1 @@
+import {create} from 'zustand'; import type {Theme} from '../types/common.types'; interface S{theme:Theme;toggle:()=>void} export const useThemeStore=create<S>((set)=>({theme:(localStorage.getItem('theme') as Theme)||'dark',toggle:()=>set(s=>{const theme=s.theme==='dark'?'light':'dark';localStorage.setItem('theme',theme);return{theme}})}));

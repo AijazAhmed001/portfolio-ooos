@@ -1,0 +1,1 @@
+export function Avatar({label='AA'}:{label?:string}){return <div className="avatar">{label}</div>}

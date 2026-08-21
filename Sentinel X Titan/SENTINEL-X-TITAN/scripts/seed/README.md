@@ -1,0 +1,3 @@
+# Seed
+
+Synthetic seed generation.

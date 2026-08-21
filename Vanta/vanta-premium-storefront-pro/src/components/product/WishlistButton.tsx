@@ -1,0 +1,2 @@
+import { Heart } from 'lucide-react';import { motion } from 'motion/react';import { useWishlistStore } from '../../store/wishlistStore'
+export function WishlistButton({id,className=''}:{id:number;className?:string}){const has=useWishlistStore(s=>s.ids.includes(id)),toggle=useWishlistStore(s=>s.toggle);return <motion.button aria-label="Toggle wishlist" className={`wishlist-btn ${has?'active':''} ${className}`} whileTap={{scale:.82}} onClick={e=>{e.preventDefault();e.stopPropagation();toggle(id)}}><Heart fill={has?'currentColor':'none'}/></motion.button>}

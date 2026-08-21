@@ -1,0 +1,1 @@
+export function WidgetCard({title,onAdd}:{title:string;onAdd:()=>void}){return <button className="widget-option" onClick={onAdd}>{title}</button>}

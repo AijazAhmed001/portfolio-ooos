@@ -1,0 +1,1 @@
+import type {ButtonHTMLAttributes,ReactNode} from 'react';export default function IconButton({children,...props}:ButtonHTMLAttributes<HTMLButtonElement>&{children:ReactNode}){return <button className='icon-danger' {...props}>{children}</button>}

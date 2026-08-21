@@ -1,0 +1,1 @@
+import {RotateCcw} from 'lucide-react';import {useDashboardStore} from '../../store/dashboardStore';export function DashboardEditMode(){const reset=useDashboardStore(s=>s.reset);return <div className="edit-notice">Drag widgets to reorder. Your layout is saved locally.<button className="btn btn-ghost" onClick={reset}><RotateCcw size={13}/>Reset layout</button></div>}

@@ -1,0 +1,1 @@
+import {useFilterStore} from '../store/filterStore'; export const useFilters=()=>useFilterStore();

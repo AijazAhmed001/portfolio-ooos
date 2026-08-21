@@ -1,0 +1,1 @@
+import type {ButtonHTMLAttributes,ReactNode} from 'react';export default function Button({children,...props}:ButtonHTMLAttributes<HTMLButtonElement>&{children:ReactNode}){return <button className='ghost-button' {...props}>{children}</button>}

@@ -1,0 +1,1 @@
+import { Link } from 'react-router-dom';export function EmptyCart({onClose}:{onClose?:()=>void}){return <div className="empty-state"><span>YOUR BAG IS EMPTY</span><p>You haven't added anything yet.</p><Link className="btn btn-dark" to="/shop" onClick={onClose}>EXPLORE NEW ARRIVALS →</Link></div>}

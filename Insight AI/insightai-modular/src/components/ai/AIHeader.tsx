@@ -1,0 +1,1 @@
+import {Sparkles,X} from 'lucide-react';import {IconButton} from '../ui/IconButton';export function AIHeader({onClose}:{onClose:()=>void}){return <div className="ai-head"><div><span className="ai-orb"><Sparkles/></span><div><b>AI Analyst</b><small>● Ready · SaaS Revenue</small></div></div><IconButton onClick={onClose}><X size={17}/></IconButton></div>}

@@ -1,0 +1,1 @@
+export function Radio({label,checked,onChange,name}:{label:string;checked:boolean;onChange:()=>void;name:string}){return <label className="check"><input type="radio" name={name} checked={checked} onChange={onChange}/><span>{label}</span></label>}

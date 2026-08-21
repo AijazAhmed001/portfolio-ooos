@@ -1,0 +1,1 @@
+export type WidgetId='revenueChart'|'sources'|'regions'|'funnel'|'insight'|'table'; export interface DashboardWidget {id:WidgetId;title:string;size:'wide'|'normal'|'full'}

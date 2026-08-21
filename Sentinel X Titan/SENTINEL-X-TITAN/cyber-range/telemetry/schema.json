@@ -1,0 +1,1 @@
+{"type":"object","required":["time","source","machine","title","severity"],"properties":{"time":{"type":"string"},"source":{"type":"string"},"machine":{"type":"string"},"title":{"type":"string"},"detail":{"type":"string"},"severity":{"enum":["LOW","MEDIUM","HIGH","CRITICAL"]},"tactic":{"type":"string"}}}

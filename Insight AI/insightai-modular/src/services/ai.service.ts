@@ -1,0 +1,1 @@
+import {aiAnswers} from '../data/ai.mock'; export const aiService={getMockAnswer:(q:string)=>q.toLowerCase().includes('conversion')?aiAnswers.conversion:aiAnswers.revenue};

@@ -1,0 +1,1 @@
+export function ExportMenu(){return <div className="export-menu"><button>PDF Report</button><button>PNG Dashboard</button><button>CSV Data</button></div>}
