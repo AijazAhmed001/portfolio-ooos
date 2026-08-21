@@ -1,0 +1,1 @@
+import{j as s}from"./index-h2dvdFNA.js";function i({eyebrow:e,title:c,subtitle:a,actions:p,children:r}){return s.jsxs("div",{className:"app-shell data-app",children:[s.jsxs("div",{className:"page-head compact",children:[s.jsxs("div",{children:[s.jsx("span",{className:"eyebrow",children:e}),s.jsx("h1",{children:c}),a&&s.jsx("p",{children:a})]}),p]}),r]})}export{i as A};

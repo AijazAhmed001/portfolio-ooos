@@ -1,0 +1,5 @@
+date,customer,plan,revenue,region,channel
+2026-04-01,Acme Inc.,Enterprise,8450,UAE,Organic
+2026-04-02,Nova Labs,Growth,5920,USA,Direct
+2026-04-03,Vertex AI,Enterprise,7800,UK,Referral
+2026-04-04,Pixel Corp,Starter,2410,Pakistan,Paid

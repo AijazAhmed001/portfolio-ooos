@@ -1,0 +1,22 @@
+{
+    "slug": "insight-ai",
+    "index": "01",
+    "title": "Insight AI",
+    "eyebrow": "AI analytics platform",
+    "summary": "A modular intelligence workspace that turns complex datasets into interactive dashboards, visual stories, reports and actionable decisions.",
+    "stack": [
+        "React",
+        "TypeScript",
+        "AI",
+        "Data Visualization"
+    ],
+    "tone": "blue",
+    "metric": "AI",
+    "metricLabel": "decision intelligence",
+    "github": "https://github.com/AijazAhmed001",
+    "live": "/projects/insight-ai/index.html",
+    "poster": "/posters/insight-ai.png",
+    "year": "2026",
+    "order": 1,
+    "status": "published"
+}

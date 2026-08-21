@@ -1,0 +1,19 @@
+{
+  "name": "My New Project",
+  "slug": "my-new-project",
+  "eyebrow": "Web application",
+  "description": "Write a short professional description of this project.",
+  "stack": ["React", "TypeScript", "UI/UX"],
+  "tone": "blue",
+  "metric": "NEW",
+  "metricLabel": "featured project",
+  "github": "https://github.com/AijazAhmed001",
+  "poster": "poster.png",
+  "projectDirectory": ".",
+  "watchDirectories": ["src", "public"],
+  "buildCommand": "npx vite build",
+  "buildDirectory": "dist",
+  "year": "2026",
+  "order": 10,
+  "enabled": true
+}

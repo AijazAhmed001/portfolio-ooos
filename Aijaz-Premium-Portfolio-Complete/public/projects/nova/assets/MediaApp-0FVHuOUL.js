@@ -1,0 +1,6 @@
+import{c as s,j as e,h as a}from"./index-h2dvdFNA.js";import{A as l}from"./AppScaffold-C9EY-ern.js";import{F as o}from"./folder-open-CxQueygl.js";import{M as r}from"./music-DZgEkNmT.js";/**
+ * @license lucide-react v0.468.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const c=s("CirclePlay",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polygon",{points:"10 8 16 12 10 16 10 8",key:"1cimsy"}]]);function m(){return e.jsx(l,{eyebrow:"MEDIA",title:"Local media workspace",subtitle:"Open a media folder in NOVA Files or launch files with their system player.",children:e.jsxs("div",{className:"media-hero surface",children:[e.jsxs("div",{children:[e.jsx("span",{className:"media-disc",children:e.jsx(c,{size:42})}),e.jsx("h2",{children:"Your local library, without cloud upload."}),e.jsx("p",{children:"NOVA intentionally leaves playback to your installed system apps in this build while providing the media workspace shell."}),e.jsxs("button",{className:"primary-button",onClick:async()=>{const i=await window.nova.files.chooseFolder();i&&window.nova.files.open(i)},children:[e.jsx(o,{size:16}),"Open media folder"]})]}),e.jsxs("div",{className:"media-icons",children:[e.jsx(r,{}),e.jsx(a,{})]})]})})}export{m as default};
