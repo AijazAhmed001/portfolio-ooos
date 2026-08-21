@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aijaz Ahmed Portfolio",
-  description: "Full-stack engineer and product designer building secure, scalable digital products.",
+  title: "Narmeen Siddiqui Portfolio",
+  description: "Narmeen Siddiqui's personal portfolio and educational journey.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -28,3 +28,4 @@ export default function RootLayout({
     </html>
   );
 }
+
