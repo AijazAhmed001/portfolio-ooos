@@ -188,7 +188,7 @@ export default function Portfolio() {
     return () => io.disconnect();
   }, [recruiter, filter]);
   useEffect(() => {
-    const sections = ["about", "work", "skills", "experience", "contact"]
+    const sections = ["about", "work", "skills", "education", "contact"]
       .map((id) => document.getElementById(id))
       .filter((section): section is HTMLElement => Boolean(section));
     const observer = new IntersectionObserver(
@@ -215,7 +215,7 @@ export default function Portfolio() {
     <div className={recruiter ? "site recruiter" : "site"}>
       <header className="nav">
         <nav className={menu ? "navlinks open" : "navlinks"}>
-          {["About", "Work", "Skills", "Experience", "Contact"].map((x) => (
+          {["About", "Work", "Skills", "Education", "Contact"].map((x) => (
             <button
               className={activeSection === x ? "active" : ""}
               key={x}
@@ -247,7 +247,7 @@ export default function Portfolio() {
           <div className="ambient one" />
           <div className="ambient two" />
           <div className="hero-copy" data-reveal>
-            <h1>Aijaz Ahmed</h1>
+            <h1>Narmeen Siddiqui</h1>
             <p className="lede">
               I turn complex ideas into secure, scalable and beautifully
               considered products—from interface to infrastructure.
@@ -307,9 +307,8 @@ export default function Portfolio() {
             </h2>
             <div data-reveal>
               <p className="large-copy">
-                I’m Aijaz Ahmed—a Karachi-based engineer and designer connecting
-                frontend craft, backend architecture, mobile, AI and cloud
-                operations.
+                I’m Narmeen Siddiqui, currently studying at Air University after
+                completing my O Levels and A Levels at HPGS.
               </p>
               <p>
                 My work starts with the real problem and follows it through
@@ -439,35 +438,35 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <section id="experience" className="experience ambient-host">
+        <section id="education" className="experience ambient-host">
           <AmbientBackdrop />
           <div className="section-head light" data-reveal>
             <div>
-              <div className="section-label">04 // EXPERIENCE</div>
-              <h2>Learning by shipping.</h2>
+              <div className="section-label">04 // EDUCATION</div>
+              <h2>My academic journey.</h2>
             </div>
-            <p>Real systems, real constraints and continuous growth.</p>
+            <p>Building knowledge, confidence and a foundation for the future.</p>
           </div>
           <div className="timeline">
             <div className="timeline-line" />
             {[
               [
-                "2026 — PRESENT",
-                "EFU General Insurance",
-                "Full-Stack Engineering Intern",
-                "Designed and developed an enterprise IT inventory platform covering asset lifecycle, permissions, allocation, audit, exports and reporting.",
+                "PRESENT",
+                "Air University",
+                "Current Student",
+                "Continuing my higher education and developing the skills needed for my future career.",
               ],
               [
-                "2025 — PRESENT",
-                "Air University Karachi",
-                "BS Computer Science · CR · Music Society VP",
-                "Building foundations across software, systems and communication while leading within the student community.",
+                "2023 — 2025",
+                "HPGS",
+                "A Levels",
+                "Completed my A Level education at HPGS.",
               ],
               [
-                "CONTINUOUS",
-                "Independent Product Work",
-                "Engineer · Designer · Creator",
-                "Building AijaLang, My Codex, Nexus Hypercloud and Tech N Tea—turning curiosity into working products and clear explanations.",
+                "2021 — 2023",
+                "HPGS",
+                "O Levels",
+                "Completed my O Level education at HPGS.",
               ],
             ].map((x, i) => (
               <article className="timeline-item" data-reveal key={x[1]}>
@@ -592,10 +591,10 @@ export default function Portfolio() {
         <div className="footer-inner">
           <div className="footer-top">
             <div className="footer-intro">
-              <span className="footer-mark">AA</span>
+              <span className="footer-mark">NS</span>
               <div>
-                <h2>Aijaz Ahmed</h2>
-                <p>Full-stack engineer and product designer building thoughtful digital systems.</p>
+                <h2>Narmeen Siddiqui</h2>
+                <p>Air University student sharing her academic journey and selected work.</p>
               </div>
             </div>
             <div className="footer-links">
@@ -603,18 +602,16 @@ export default function Portfolio() {
                 <span>EXPLORE</span>
                 <a href="#about">About</a>
                 <a href="#work">Selected work</a>
-                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
               </div>
               <div>
                 <span>CONNECT</span>
-                <a href="https://github.com/AijazAhmed001" target="_blank">GitHub ↗</a>
-                <a href="https://linkedin.com/in/aijaz-ahmed-605a89249" target="_blank">LinkedIn ↗</a>
                 <a href="#contact">Start a conversation</a>
               </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <span>© 2026 Aijaz Ahmed. All rights reserved.</span>
+            <span>© 2026 Narmeen Siddiqui. All rights reserved.</span>
             <span className="footer-status"><i /> Available for selected opportunities</span>
             <a href="#home">Back to top <b>↑</b></a>
           </div>
@@ -685,3 +682,4 @@ export default function Portfolio() {
     </div>
   );
 }
+
